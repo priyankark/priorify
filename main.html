@@ -1,0 +1,42 @@
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Get your priorities straight!</title>
+    <link href="maincss.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<header class="jumbotron">
+    <div class="container">
+        <h1 class="header text-center">Priorify</h1>
+
+
+    </div>
+
+</header>
+
+<div class="col-xs-12 col-sm-12">
+    {{> loginButtons}}
+</div>
+
+{{#if currentUser}}
+
+<div class="col-xs-12 col-sm-6">
+{{> toDoList}}
+    </div>
+
+<div class="col-xs-12 col-sm-6">
+    {{>requests}}
+
+</div>
+    <div class="col-xs-12 col-sm-12">
+        {{> addToRequests}}
+
+    </div>
+{{/if}}
+
+</body>
+
